@@ -5,7 +5,7 @@ CXX = g++
 CXXFLAGS = -std=c++17 -Wconversion -Wall -Werror -Wextra -pedantic
 
 # set source
-SOURCE = buyAndSellStock.cpp
+SOURCE = quickSort.cpp
 
 # set executable
 EXECUTABLE = main
