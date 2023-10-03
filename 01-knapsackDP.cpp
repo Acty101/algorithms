@@ -11,11 +11,11 @@ struct Item {
   uint32_t value;
 };
 
-class Solution {
+class DP {
   vector<Item> items;
 
  public:
-  Solution(const vector<uint32_t>& weights, const vector<uint32_t> values) {
+  DP(const vector<uint32_t>& weights, const vector<uint32_t> values) {
     for (size_t i = 0; i < weights.size(); ++i) {
       Item item = {weights[i], values[i]};
       items.push_back(item);
@@ -75,6 +75,6 @@ class Solution {
 int main() {
   vector<uint32_t> weights = {3, 2, 1, 4};
   vector<uint32_t> values = {1, 4, 2, 6};
-  Solution s(weights, values);
+  DP s(weights, values);
   cout << s.findMaxValueOptimized(9);
 }
